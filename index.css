@@ -506,16 +506,6 @@ header{
     transition-duration: 1s;
 }
 
-
-@media (max-width:700px){
-    .nav{
-        transform:translateX(100%);
-    }
-    .newnav .nav{
-        transform: translateX(0%);
-    }
-}
-
 .newnav .nav{
     transform: translateY(0);
 }
@@ -529,6 +519,16 @@ header{
 
 .newnav .hamburger{
     transform: scale(2);
+}
+
+
+@media (max-width:700px){
+    .nav{
+        transform:translateX(100%);
+    }
+    .newnav .nav{
+        transform: translateX(0%);
+    }
 }
 
 
