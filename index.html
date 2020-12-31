@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sri Sukhmani Institute of Engineering snd Technology</title>
+        <title>Sri Sukhmani Institute of Engineering and Technology</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
         <link rel="shortcut icon" type="image" href="./favicon.ico.jpg" />
@@ -70,7 +70,7 @@
                 </div>
             </div> <!-- / services -->
             
-            <a href="#gallery" class="btn">Get a Glimpse</a>
+            <a href="./contact.html" class="btn" target="_blank">Get in touch</a>
         </section>
 
         <!-- About us -->
@@ -161,5 +161,31 @@
         </footer>
 
         <script src="./index.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDWXWx1cELrB9YN6lxVxhAhhKO0C9quqSA",
+            authDomain: "ssiet-1711607.firebaseapp.com",
+            projectId: "ssiet-1711607",
+            storageBucket: "ssiet-1711607.appspot.com",
+            messagingSenderId: "154457371466",
+            appId: "1:154457371466:web:382639e78ccc24429cc7b3",
+            measurementId: "G-2XW64BY03V"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+
+        var store=firebase.storage()
+        alert(store)
+        </script>
     </body>
 </html>
