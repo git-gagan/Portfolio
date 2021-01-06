@@ -35,11 +35,9 @@
 }
 
 .contact{
-    display: flex;
     text-align: center;
     font-size: var(--fs-h1);
     font-family: karla;
-    top:50%;
     font-weight: var(--fw-bold);
 }
 
